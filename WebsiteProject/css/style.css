@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #000; /* Ensures that all text is black */
+}
+
+header {
+    background-color: #d9534f;
+    color: white; /* Keeps the header text white */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Makes the list items appear horizontally */
+    margin-right: 20px; /* Adds space between each list item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes the underline from links */
+    color: #000; /* Sets the text color to black */
+    font-size: 18px; /* Increases font size for better visibility */
+    font-weight: bold; /* Makes the text bold */
+    transition: color 0.3s ease; /* Smooth transition effect when hovering */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    color: #007bff; /* Changes color when hovered */
+}
+
+footer {
+    background-color: #d9534f;
+    color: white; /* Keeps the footer text white */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
