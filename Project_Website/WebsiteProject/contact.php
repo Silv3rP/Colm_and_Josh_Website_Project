@@ -35,15 +35,8 @@ text-align: center;
     <br>
 
     <button type="submit">Send</button>
-    <style>
-    button{
-    padding: 15px;
-    background-color: #d9534f;
-
-    }
-
-
-    </style>
+    <br>
+    <br>
 </form>
 
 <?php include 'footer.php'; ?>

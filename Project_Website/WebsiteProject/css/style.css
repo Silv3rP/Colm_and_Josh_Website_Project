@@ -1,10 +1,46 @@
+/* Default styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #000; /* Ensures that all text is black */
+    color: #000; /* Default text color */
+    background-image: url('../images/CHICKEN.gif'); /* Keep background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+/* Dark mode styles */
+.dark-mode {
+    background-image: url('../images/CHICKEN.gif'); /* Keep the same background */
+    color: #fff; /* Change text to white */
+}
+
+h1{
+color: #000;
+
+}
+.dark-mode h1{
+    color: #fff ;
+    
+}
+
+/* Dark mode navbar */
+.dark-mode nav ul li a {
+    color: #fff ;
+}
+
+/* Dark mode button */
+#darkModeToggle {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
 
 header {
     background-color: #d9534f;
@@ -12,6 +48,17 @@ header {
     padding: 15px;
     text-align: center;
 }
+
+.dark-mode header{
+background-color: #000;
+
+}
+
+button{
+    padding: 15px;
+    background-color: #d9534f;
+
+    }
 
 
 nav ul {
@@ -37,10 +84,32 @@ nav ul li a:hover {
     color: #007bff; /* Changes color when hovered */
 }
 
+p{
+color:#000;
+
+}
+.dark-mode p{
+    color: #fff ;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background-color: #d9534f;
     color: white; /* Keeps the footer text white */
     text-align: center;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: auto;
 }
+
+.dark-mode footer{
+background-color: #000;
+
+}
+

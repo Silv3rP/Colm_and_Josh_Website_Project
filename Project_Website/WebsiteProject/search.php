@@ -14,6 +14,10 @@ text-align: center;
 font-awesome
 
 }
+input{
+padding:15px;
+
+}
 </style>
 <form action="search.php" method="GET">
     <input type="text" name="query" placeholder="Enter a food item..." required>

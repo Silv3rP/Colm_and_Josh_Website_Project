@@ -7,7 +7,7 @@
 
 <style>
 footer {
-    text-align: center; /* Centers text and image */
+    text-align: bottom; 
     padding: 20px 0;
 }
 

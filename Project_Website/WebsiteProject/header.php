@@ -16,6 +16,16 @@
             <li><a href="search.php">Search</a></li>
             <li><a href="about.php">About Us</a></li>
             <li><a href="contact.php">Contact</a></li>
+            
         </ul>
     </nav>
+
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+     
 </header>
