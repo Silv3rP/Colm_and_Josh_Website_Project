@@ -10,7 +10,7 @@
 </body>
 </html>
 
-<?php include 'header.php'; ?>
+<?php include 'templates/header.php'; ?>
 
 <section id="menu">
     <h2>Our Menu</h2>
@@ -83,4 +83,4 @@
     <p>Address: 123 Food Street, Tasty Town</p>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'templates/footer.php'; ?>

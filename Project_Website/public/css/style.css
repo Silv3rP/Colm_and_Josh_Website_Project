@@ -50,6 +50,16 @@ header {
     text-align: center;
 }
 
+h2{
+
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    }
+
 .dark-mode header{
 background-color: #000;
 
@@ -62,9 +72,11 @@ button{
     }
 
 
+
 nav ul {
     list-style-type: none; /* Removes default bullet points */
     padding: 0;
+    display: inline;
 }
 
 nav ul li {
@@ -113,4 +125,29 @@ footer {
 background-color: #000;
 
 }
+
+form{
+
+    text-align: center;
+}
+
+label{
+
+    text-align: center;
+}
+
+input[type="submit"]{
+
+    text-align: center;
+    background-color: #d9534f;
+    padding: 10px;
+}
+
+a{
+
+    text-align: center;
+    
+}
+
+
 

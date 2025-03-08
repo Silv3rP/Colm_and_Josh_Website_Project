@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'templates/header.php'; ?>
 
 <h2>Contact Us</h2>
 
@@ -39,4 +39,4 @@ text-align: center;
     <br>
 </form>
 
-<?php include 'footer.php'; ?>
+<?php include 'templates/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'templates/header.php'; ?>
 
 <head>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -23,8 +23,11 @@ padding:15px;
     <input type="text" name="query" placeholder="Enter a food item..." required>
     <button type="submit" class="search-button">
     <i class="fas fa-search"></i>
+    
 
     </button>
+    <br>
+    <br>
 
 
 </form>
@@ -36,4 +39,4 @@ if (isset($_GET['query'])) {
 }
 ?>
 
-<?php include 'footer.php'; ?>
+<?php include 'templates/footer.php'; ?>
