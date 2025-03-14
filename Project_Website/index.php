@@ -15,57 +15,41 @@
 <section id="menu">
     <h2>Our Menu</h2>
     <ul>
+        <div>
         <?php
-        // Database Connection
-        $conn = new mysqli("localhost", "root", "", "fastfood_db");
+        // Database connection
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "fastfood_db";
 
-        // Check Connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
 
-        // Ensure the 'menu_items' table exists
-        $createTableSQL = "CREATE TABLE IF NOT EXISTS menu_items (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(100) NOT NULL,
-            price DECIMAL(5,2) NOT NULL
-        )";
-        $conn->query($createTableSQL);
+       // Fetch top 5 highest-rated items
+        $sqlTop5 = "SELECT item_name, price, customer_rating FROM fast_food ORDER BY customer_rating DESC LIMIT 5";
+        $result = $conn->query($sqlTop5);
 
-        // Insert default items if the table is empty
-        $checkTable = $conn->query("SELECT COUNT(*) AS total FROM menu_items");
-        $row = $checkTable->fetch_assoc();
         
-        if ($row['total'] == 0) {
-            $sqlInsert = "INSERT INTO menu_items (name, price) VALUES
-                ('Spicy Chicken Sandwich', 5.99),
-                ('BBQ Wings (6pcs)', 7.49),
-                ('Loaded Fries', 4.99),
-                ('Grilled Chicken Wrap', 6.99),
-                ('Classic Burger', 8.99)";
-            
-            if ($conn->query($sqlInsert) === TRUE) {
-                echo "<p>Menu items added!</p>";
-            } else {
-                echo "<p>Error inserting menu items: " . $conn->error . "</p>";
-            }
-        }
-
-        // Fetch and Display Menu Items
-        $sql = "SELECT name, price FROM menu_items";
-        $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
+            echo "<h2>Top 5 Highest-Rated Menu Items</h2><ul>";
             while ($row = $result->fetch_assoc()) {
-                echo "<li>" . htmlspecialchars($row["name"]) . " - $" . number_format($row["price"], 2) . "</li>";
+                echo "<li>{$row['item_name']} - {$row['price']} (Rating: {$row['customer_rating']})</li>";
             }
+            echo "</ul>";
         } else {
-            echo "<li>No items available</li>";
+            echo "<p>No menu items found.</p>";
         }
 
-        // Close Connection
+        // Close connection
         $conn->close();
         ?>
+        </div>
     </ul>
 </section>
 

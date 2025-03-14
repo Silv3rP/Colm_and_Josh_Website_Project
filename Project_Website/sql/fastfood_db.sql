@@ -24,10 +24,11 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fastfood_db`
+-- Table structure for table `fast_food`
 --
 
-CREATE TABLE `fastfood_db` (
+
+CREATE TABLE `fast_food` (
   `item_id` int(11) NOT NULL,
   `item_name` varchar(100) DEFAULT NULL,
   `description` text,
@@ -36,10 +37,10 @@ CREATE TABLE `fastfood_db` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `fastfood_db`
+-- Dumping data for table `fast_food`
 --
 
-INSERT INTO `fastfood_db` (`item_id`, `item_name`, `description`, `price`, `customer_rating`) VALUES
+INSERT INTO `fast_food` (`item_id`, `item_name`, `description`, `price`, `customer_rating`) VALUES
 (1, 'Los Pollos Locos Wings', 'Crispy wings with a wild twist.', 8.99, 4.8),
 (2, 'Heisenburger', 'Grilled chicken burger with blue cheese sauce.', 10.99, 4.7),
 (3, 'The Jesse Tender', 'Juicy chicken tenders with BBQ sauce.', 7.99, 4.5),
@@ -96,9 +97,9 @@ INSERT INTO `fastfood_db` (`item_id`, `item_name`, `description`, `price`, `cust
 --
 
 --
--- Indexes for table `fastfood_db`
+-- Indexes for table `fast_food`
 --
-ALTER TABLE `fastfood_db`
+ALTER TABLE `fast_food`
   ADD PRIMARY KEY (`item_id`);
 
 --
@@ -106,10 +107,9 @@ ALTER TABLE `fastfood_db`
 --
 
 --
--- AUTO_INCREMENT for table `fastfood_db`
+-- AUTO_INCREMENT for table `fast_food`
 --
-ALTER TABLE `fastfood_db`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+ALTER TABLE `fast_food` MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
