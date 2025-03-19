@@ -38,7 +38,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`) VALUES
-(1, 'B00152001@mytudublin.ie', '$2y$10$TB1ZBxv3JiEPQUFWtY9EI.A6bqm3SUIsQ1k7AXq5dlQ0Wy2tWAeUK');
+
 
 --
 -- Indexes for dumped tables

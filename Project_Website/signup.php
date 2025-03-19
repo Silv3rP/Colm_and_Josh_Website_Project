@@ -4,7 +4,7 @@
 <?php
 
 
-$conn = new mysqli("localhost", "root", "", "los_boyos_hermanos");
+$conn = new mysqli("localhost", "root", "", "los_boyos_hermanos", 3307);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
@@ -17,6 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $conn->close();
 ?>
 
+<h1>SIGNUP</h1>
 <form method="POST">
     <br>
     Email: <input type="email" name="email" required><br><br>
