@@ -22,6 +22,7 @@ padding:15px;
 <form action="search.php" method="GET">
     <input type="text" name="query" placeholder="Enter a food item..." required>
     <button type="submit" class="search-button">
+    
     <i class="fas fa-search"></i>
     
 
@@ -31,6 +32,8 @@ padding:15px;
 
 
 </form>
+
+<a href="shipping.php" class="search-button">Proceed to Shipping</a>
 
 <?php
 if (isset($_GET['query'])) {
