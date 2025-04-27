@@ -33,7 +33,6 @@
     </button>
 </form>
 
-<br>
 
 <?php
 // Connect to the database
@@ -75,5 +74,45 @@ $conn->close();
 <?php if ($showShippingButton): ?>
     <a href="shipping.php" class="search-button">Proceed to Shipping</a>
 <?php endif; ?>
+
+<br>
+<h2>Our top 5 rated meals!</h2>
+<div>
+
+<img src="images/bucket.png" alt="chicken-bucket">
+
+<img src="images/wings.jpg" alt="Wings">
+
+<img src="images/cb.jpg" alt="Chicken-burger">
+
+<img src="images/beef.jpg" alt="Beef Burger">
+
+<img src="images/wings2.jpg" alt="WW-Wings">
+<label>Warning! Spicy Wings!</label>
+
+</div>
+<style>
+div img{
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    
+    
+
+}
+
+label{
+    padding-right: 125px;
+    text-align: right;
+    
+    
+}
+
+</style>
+
+<br>
 
 <?php include 'templates/footer.php'; ?>
