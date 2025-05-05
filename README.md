@@ -20,6 +20,15 @@ A full-stack web application for Los Boyos Hermanos, developed using PHP, MySQL,
 - **Backend**: PHP
 - **Database**: MySQL
 
+## Contribution Statement
+
+This project was developed by Colm and Josh as part of a web development module.
+
+Both members contributed equally to the planning, development, and testing of the application.  
+Work was divided based on skillsets, with regular collaboration to review and integrate each other's code.  
+All functionality was jointly tested to ensure a complete and working product.
+
+
 ## Setup Instructions
 
 1. **Clone the Repository**
